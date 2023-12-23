@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-nav {
-    background-color: #17BEBB;
-}
-
 /* Navbar - #664233 (Original Color) */
 /* Navbar - #029c80 (Mum's Suggestion) */ 
 /* Navbar - #17BEBB (Coolors.com) */
@@ -11,15 +7,30 @@ nav {
 /* Navbar Hover - #1cff8d */
 /* Accent - #FF8552 (Coolors.com) */
 
+nav {
+    background-color: #17BEBB;
+}
+
+#navButton{
+    color: #ffffff;
+}
+
+#navButton:hover{
+    color: #1cff8d;
+}
+
+/* Sets the Auto Margin Feature */
 .mx-auto {
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Sets font-size for <p> tags with ID "introToCam" */
 #introToCam{
     font-size: 20px;
 }
 
+/* Sets Nav Options to Absolute Center */
 .absolutecenter {
     margin: auto;
     position: absolute;
@@ -42,11 +53,65 @@ nav {
     }
 }
 
+/* Sets Text Colour for Selected Nav Button */
 #selectedButton{
     color: #c2cec4;
 }
 
-h2:after
+/* Sets Styling for id="subheading" */
+#subheading{
+    text-align: center;
+    color: #3d3d3d
+}
+
+/* Sets Styling for Hyper Links */
+a{
+    color:#FF8552;
+}
+
+/* Sets Styling for Input Fields */
+input.form-control{
+    width: 100%;
+    border-width: 1px;
+    border-color: #1cff8d;
+    margin-top: 5px
+}
+
+textarea.form-control{
+    width: 100%;
+    border-width: 1px;
+    border-color: #1cff8d;
+    align-items: center;
+}
+
+.btn-info{
+    background: transparent;
+    border-color: #1cff8d;
+    align-items: center;
+    width: 60%;
+    letter-spacing: 0.1rem;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+}
+
+.btn-info:hover{
+    transform: scale(1.02);
+    background-color: #FF8552;
+    color: #ffffff;
+}
+
+#honeypot{
+    display: none;
+}
+
+
+#contactDiv{
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Creates "Butt" / Header Row */
+#withButt:after
 {
     content:' ';
     display:block;
@@ -54,19 +119,7 @@ h2:after
     width: 20%;
 }
 
-a{
-    color:#FF8552;
-}
 
-ul li:hover{
-    text-decoration-color: #f7b99e;
-}
 
-#navButton:hover{
-    color: #1cff8d;
-}
 
-#navButton{
-    color: #ffffff;
-}
 
