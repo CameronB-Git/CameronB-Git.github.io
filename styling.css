@@ -25,16 +25,28 @@ nav {
     margin-right: auto;
 }
 
+.ms-25{
+    margin-left: 25%;
+}
+
 p{
     display: block;
     max-width: 55%;
     margin: auto;
+    margin-left: 25%;
 }
 
+/* Sets Styling for Hyper Links */
+a{
+    color:#FF8552;
+}
 
+#marginLeft{
+    margin-left: 25%;
+}
 
-/* Sets font-size for <p> tags with ID "introToCam" */
-#introToCam{
+/* Sets font-size for <p> tags with ID "textSize" */
+#textSize{
     font-size: 20px;
 }
 
@@ -51,7 +63,6 @@ p{
     left: 0; right: 0;
 }
 
-
 /* Media query to remove centering on small screens */
 @media (max-width: 767px) {
     .absolutecenter {
@@ -67,7 +78,12 @@ p{
     }
     p{
         max-width: 95%;
+        margin-left: 0%;
     }
+    #marginLeft{
+        margin-left: 0%;
+    }
+
 }
 
 /* Sets Text Colour for Selected Nav Button */
@@ -79,11 +95,6 @@ p{
 #subheading{
     text-align: center;
     color: #3d3d3d
-}
-
-/* Sets Styling for Hyper Links */
-a{
-    color:#FF8552;
 }
 
 /* Sets Styling for Input Fields */
@@ -125,50 +136,16 @@ label.form-control{
     display: none;
 }
 
-
 #centerHeading{
     margin-top: 5px;
     text-align: center;
 }
 
 /* Creates "Butt" / Header Row */
-#withButt:after
+.withButt:after
 {
     content:' ';
     display:block;
     border: 2px solid #FF8552;
     width: 11%;
 }
-
-.outer {
-    display: table;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-  
-.middle {
-    display: table-cell;
-    vertical-align: middle;
-}
-  
-.inner {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 75%;
-    min-width: 35%
-    /* Whatever width you want */
-}
-
-.spacer {
-    float: left;
-    height: 20px;
-    width: 200px;
-}
-
-
-
-
-
