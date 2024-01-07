@@ -145,7 +145,8 @@ label.form-control{
 .withButt:after
 {
     content:' ';
-    display:block;
+    display: block;
+    position: absolute;
     border: 2px solid #FF8552;
-    width: 11%;
+    width: 3.25rem;
 }
