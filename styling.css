@@ -1,12 +1,5 @@
 @charset "utf-8";
 
-/* Navbar - #664233 (Original Color) */
-/* Navbar - #029c80 (Mum's Suggestion) */ 
-/* Navbar - #17BEBB (Coolors.com) */
-/* Navbar Selected - #a6aba7 */
-/* Navbar Hover - #1cff8d */
-/* Accent - #FF8552 (Coolors.com) */
-
 nav {
     background-color: #17BEBB;
 }
@@ -57,12 +50,6 @@ a{
     left: 0; right: 0;
 }
 
-.absolutecentertwo {
-    margin: auto;
-    position: absolute;
-    left: 0; right: 0;
-}
-
 /* Media query to remove centering on small screens */
 @media (max-width: 767px) {
     .absolutecenter {
@@ -95,6 +82,16 @@ a{
 #subheading{
     text-align: center;
     color: #3d3d3d
+}
+
+[data-bs-theme='dark'] #subheading,
+[data-bs-theme='dark'] #submitButton{ 
+    color: white;
+}
+
+.required-asterisk {
+    color: red;
+    margin-left: 4px; /* Add spacing between label and asterisk if needed */
 }
 
 /* Sets Styling for Input Fields */
@@ -136,11 +133,6 @@ label.form-control{
     display: none;
 }
 
-#centerHeading{
-    margin-top: 5px;
-    text-align: center;
-}
-
 /* Creates "Butt" / Header Row */
 .withButt:after
 {
@@ -148,5 +140,5 @@ label.form-control{
     display: block;
     position: absolute;
     border: 2px solid #FF8552;
-    width: 3.25rem;
+    width: var(--underline-width, 3.75rem);
 }
