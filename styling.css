@@ -38,7 +38,6 @@ a{
     margin-left: 25%;
 }
 
-/* Sets font-size for <p> tags with ID "textSize" */
 #textSize{
     font-size: 20px;
 }
@@ -143,8 +142,6 @@ label.form-control{
     width: var(--underline-width, 3.75rem);
 }
 
-
-
 .spacer {
     aspect-ratio: 960/200;
     width: 100%;
@@ -152,7 +149,7 @@ label.form-control{
     background-position: center;
     background-size: cover;
     
-  }
+}
 
 .layered-waves-dark {
     background-image: url("/Assets/SVGs/layered-waves-haikei-dark.svg");
@@ -163,25 +160,31 @@ label.form-control{
     background-image: url("/Assets/SVGs/layered-waves-haikei-light.svg");
 }
 
+
 .typewriter {
     overflow: hidden;
-    border-right: .15em solid orange;
     white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .05em;
-    animation: typing 1.5s steps(18, end), blink-caret .75s step-end infinite;
-    /* Adjust the animation duration and steps based on your name length */
 }
 
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 18ch; }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
-  
+.typewriter b::after {
+    content: "|"; /* Blinking cursor */
+    color: #FF8552;
+    display: inline-block;
+    animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.typewriter b {
+    display: inline-block;
+    overflow: hidden;
+    animation: typing 2.5s steps(18, end);
+}
+
+@keyframes blink-caret {
+    from, to { opacity: 0; }
+    50% { opacity: 1; }
+}
