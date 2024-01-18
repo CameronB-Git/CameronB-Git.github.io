@@ -142,3 +142,46 @@ label.form-control{
     border: 2px solid #FF8552;
     width: var(--underline-width, 3.75rem);
 }
+
+
+
+.spacer {
+    aspect-ratio: 960/200;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+  }
+
+.layered-waves-dark {
+    background-image: url("/Assets/SVGs/layered-waves-haikei-dark.svg");
+}
+
+
+.layered-waves-light{
+    background-image: url("/Assets/SVGs/layered-waves-haikei-light.svg");
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .05em;
+    animation: typing 1.5s steps(18, end), blink-caret .75s step-end infinite;
+    /* Adjust the animation duration and steps based on your name length */
+}
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 18ch; }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  
