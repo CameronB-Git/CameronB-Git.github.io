@@ -69,7 +69,11 @@ a{
     #marginLeft{
         margin-left: 0%;
     }
-
+    .typewriter b {
+        display: inline-block;
+        overflow: hidden;
+        animation: typing 2.5s steps(16, end) !important ;
+    }
 }
 
 /* Sets Text Colour for Selected Nav Button */
@@ -181,7 +185,7 @@ label.form-control{
 .typewriter b {
     display: inline-block;
     overflow: hidden;
-    animation: typing 2.5s steps(18, end);
+    animation: typing 5s steps(50, end);
 }
 
 @keyframes blink-caret {
