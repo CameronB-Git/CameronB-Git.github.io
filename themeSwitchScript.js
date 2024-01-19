@@ -40,16 +40,7 @@ function toggleMode(){
 // Loads the mode from local storage
 function loadMode(){
     var mode = localStorage.getItem("mode"); // Gets the mode from local storage
-    if (mode == "Dark"){
-        document.documentElement.setAttribute('data-bs-theme','dark') // If mode is Dark, set theme to Dark
-        var text = document.getElementById("btnSwitch");
-        text.textContent = "Light Mode"; // Change button text to "Light Mode"
-
-        // Changes the Bottom Waves to the Dark Mode version
-        const bottomWavesImage = document.getElementById("bottomWaves"); 
-        bottomWavesImage.setAttribute('class', 'spacer layered-waves-dark')
-    }
-    else{
+    if (mode == "Light"){
         document.documentElement.setAttribute('data-bs-theme','light') // If mode is Light, set theme to Light
         var text = document.getElementById("btnSwitch");
         text.textContent = "Dark Mode"; // Change button text to "Dark Mode"
@@ -57,6 +48,15 @@ function loadMode(){
         // Changes the Bottom Waves to the Light Mode version
         const bottomWavesImage = document.getElementById("bottomWaves"); 
         bottomWavesImage.setAttribute('class', 'spacer layered-waves-light')
+    }
+    else{
+        document.documentElement.setAttribute('data-bs-theme','dark') // If mode is Dark, set theme to Dark
+        var text = document.getElementById("btnSwitch");
+        text.textContent = "Light Mode"; // Change button text to "Light Mode"
+
+        // Changes the Bottom Waves to the Dark Mode version
+        const bottomWavesImage = document.getElementById("bottomWaves"); 
+        bottomWavesImage.setAttribute('class', 'spacer layered-waves-dark')
     }
 }
 

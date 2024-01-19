@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        // IMPORTANT: set this in <HEAD> top before any other tag.
+        var mode = localStorage.getItem("mode");
+        if (mode == "Light"){
+        document.documentElement.setAttribute('data-bs-theme','light')
+        }
+        else{
+        document.documentElement.setAttribute('data-bs-theme','dark')
+        }
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -108,6 +118,7 @@
                 </p>-->
 
                 <h2 class="pe-5 pt-5 mb-3 withButt" id="marginLeft" style="--underline-width: 17.75rem;"><b>Projects in Progress</b></h2>
+                <h2 class="pe-5 pt-2 mb-3" id="marginLeft">Coming Soon!</h2>
                 </div>
                 
           
