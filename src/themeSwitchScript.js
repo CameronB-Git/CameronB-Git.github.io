@@ -15,7 +15,7 @@ function toggleMode(){
 
             // Changes the Sun/Moon icon to the Light Mode version
                 // var img = document.getElementById("image");
-                // img.src = "Images/Dark_Mode_Moon_Vector.svg";
+                // img.src = "/Assets/SVGs/Dark_Mode_Moon_Vector_Jonnyyy.svg";
 
         }
         else { 
@@ -33,7 +33,7 @@ function toggleMode(){
             
             // Changes the Sun/Moon icon to the Dark Mode version
                 // var img = document.getElementById("image");
-                // img.src = "Images/Light_Mode_Sun_Vector.svg";
+                // img.src = "/Assets/SVGs/Dark_Mode_Moon_Vector_Jonnyyy.svg";
         }
 }
 

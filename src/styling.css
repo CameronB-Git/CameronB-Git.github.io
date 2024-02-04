@@ -46,7 +46,7 @@ a{
 .absolutecenter {
     margin: auto;
     position: absolute;
-    left: 0; right: 0;
+    left: 4.5rem; right: 0;
 }
 
 /* Media query to remove centering on small screens */
@@ -61,6 +61,7 @@ a{
 @media (max-width: 768px) {
     #preSpacing{
         display: none;
+        
     }
     p{
         max-width: 95%;
@@ -168,6 +169,17 @@ label.form-control{
 .typewriter {
     overflow: hidden;
     white-space: nowrap;
+    
+}
+
+.delay-1500{
+    animation-name: typing;
+    animation-delay: 2500ms;
+    animation-duration: 5s;
+}
+
+.typewriterDelay{
+    
 }
 
 .typewriter b::after {
