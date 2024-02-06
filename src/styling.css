@@ -153,7 +153,6 @@ label.form-control{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
 }
 
 .layered-waves-dark {
@@ -169,17 +168,6 @@ label.form-control{
 .typewriter {
     overflow: hidden;
     white-space: nowrap;
-    
-}
-
-.delay-1500{
-    animation-name: typing;
-    animation-delay: 2500ms;
-    animation-duration: 5s;
-}
-
-.typewriterDelay{
-    
 }
 
 .typewriter b::after {
@@ -204,3 +192,5 @@ label.form-control{
     from, to { opacity: 0; }
     50% { opacity: 1; }
 }
+
+
