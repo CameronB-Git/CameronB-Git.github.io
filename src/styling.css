@@ -77,6 +77,41 @@ a{
     }
 }
 
+@media (max-width: 992px){
+    .smallScreen{
+        display: block;
+        width: 95%;
+        margin-top: 1.5rem;
+        margin-left: 2.5rem;
+    }
+
+    .smallScreenMobile{
+        display: block;
+        width: 70%;
+        margin-top: 1.5rem;
+    }
+
+    .arrow{
+        display: none;
+    }
+
+    #invoiceDashboardImage{
+        max-width: 95%;
+        margin-left: 1rem;
+
+    }
+}
+
+@media (min-width: 993px){
+    #invoiceDashboardImage{
+        max-width: 85%;
+        margin-left: 6.5rem;
+    }
+}
+
+
+
+
 /* Sets Text Colour for Selected Nav Button */
 #selectedButton{
     color: #cbd1cc;
@@ -153,7 +188,6 @@ label.form-control{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
 }
 
 .layered-waves-dark {
@@ -169,17 +203,6 @@ label.form-control{
 .typewriter {
     overflow: hidden;
     white-space: nowrap;
-    
-}
-
-.delay-1500{
-    animation-name: typing;
-    animation-delay: 2500ms;
-    animation-duration: 5s;
-}
-
-.typewriterDelay{
-    
 }
 
 .typewriter b::after {
@@ -204,3 +227,5 @@ label.form-control{
     from, to { opacity: 0; }
     50% { opacity: 1; }
 }
+
+
