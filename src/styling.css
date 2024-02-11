@@ -75,14 +75,19 @@ a{
         overflow: hidden;
         animation: typing 2.5s steps(16, end) !important ;
     }
+    .smallScreen{
+        margin-left: 0.5rem;
+    }
 }
+
 
 @media (max-width: 992px){
     .smallScreen{
         display: block;
         width: 95%;
         margin-top: 1.5rem;
-        margin-left: 2.5rem;
+        margin-left: 1rem;
+
     }
 
     .smallScreenMobile{
@@ -107,6 +112,10 @@ a{
         max-width: 85%;
         margin-left: 6.5rem;
     }
+}
+
+.smallScreen{
+    margin-left: 4.5%;
 }
 
 
