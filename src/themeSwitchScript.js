@@ -12,11 +12,6 @@ function toggleMode(){
             // Changes the Bottom Waves to the Light Mode version
             const bottomWavesImage = document.getElementById("bottomWaves"); 
             bottomWavesImage.setAttribute('class', 'spacer layered-waves-light')
-
-            // Changes the Sun/Moon icon to the Light Mode version
-                // var img = document.getElementById("image");
-                // img.src = "/Assets/SVGs/Dark_Mode_Moon_Vector_Jonnyyy.svg";
-
         }
         else { 
             document.documentElement.setAttribute('data-bs-theme','dark') // If current theme is Light, switch to Dark
@@ -30,10 +25,6 @@ function toggleMode(){
             // Changes the Bottom Waves to the Dark Mode version
             const bottomWavesImage = document.getElementById("bottomWaves");
             bottomWavesImage.setAttribute('class', 'spacer layered-waves-dark')
-            
-            // Changes the Sun/Moon icon to the Dark Mode version
-                // var img = document.getElementById("image");
-                // img.src = "/Assets/SVGs/Dark_Mode_Moon_Vector_Jonnyyy.svg";
         }
 }
 

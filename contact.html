@@ -69,71 +69,71 @@
         </div>
     </nav>
 
-    <!-- Container for Text -->
+    <!-- Container for Contact Form -->
     <div class="container mt-5 pt-5">
-                <h1 class="mt-3 text-center typewriter"> <b>Contact Me</b></h1>
-                <h2 id="subheading">I'd love to hear from you!</h2>
-                <form class="row g-3 mt-2" method="POST" action="https://formsubmit.co/ba0d959e4176dca6948993280e0ba377">
-                    <!-- Honeypot -->
-                    <input type="text" name="_honey" id="honeypot">
-                    <!-- Disable Captcha -->
-                    <input type="hidden" name="_captcha" value="false">
+        <h1 class="mt-3 text-center typewriter"><b>Contact Me</b></h1>
+        <h2 id="subheading">I'd love to hear from you!</h2>
+        <form class="row g-3 mt-2" method="POST" action="https://formsubmit.co/ba0d959e4176dca6948993280e0ba377">
+            <!-- Honeypot -->
+            <input type="text" name="_honey" id="honeypot">
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false">
 
-                    <input type="hidden" name="_next" value="http://cameronbranston.me/success.html">
+            <input type="hidden" name="_next" value="http://cameronbranston.me/success.html">
 
-                    <div class="col-md-6">
-                        <div>
-                            <label for="firstName">
-                                First Name
-                                <span class="required-asterisk">*</span>
-                            </label>
-                        </div>
-                        
-                        
-                        
-                        <input type="text" class="form-control" name="First&nbsp;Name" id="firstName" required placeholder="John">
-                    </div>
-                    <div class="col-md-6">
-                        <div>
-                            <label for="lastName">
-                                Last Name
-                                <span class="required-asterisk">*</span>
-                            </label>
-                        </div>
-                        <input type="text" class="form-control" name="Last&nbsp;Name" id="lastName" required placeholder="Doe">
-                    </div>
-                    <br>
-                    <br>
+            <!-- First Name Input Field -->
+            <div class="col-md-6">
+                <div>
+                    <label for="firstName">
+                        First Name
+                        <span class="required-asterisk">*</span>
+                    </label>
+                </div>
+                <input type="text" class="form-control" name="First&nbsp;Name" id="firstName" required placeholder="John">
+            </div>
 
+            <!-- Last Name Input Field -->
+            <div class="col-md-6">
+                    <label for="lastName">
+                        Last Name
+                        <span class="required-asterisk">*</span>
+                    </label>
+                <input type="text" class="form-control" name="Last&nbsp;Name" id="lastName" required placeholder="Doe">
+            </div>
 
-                    <div class="col-md-8">
-                        <div>
-                            <label for="email">
-                                Email
-                                <span class="required-asterisk">*</span>
-                            </label>
-                        </div>
-                        <input type="email" class="form-control" name="Email" id="email" required placeholder="johndoe@gmail.com">
-                    </div>
-                    <div class="col-md-4">
-                        <label for="phoneNumber" class="form-label mb-0">Phone Number</label>
-                        <input type="tel" class="form-control" name="Phone&nbsp;Number" id="phoneNumber" placeholder="(+44)">
-                    </div>
-                    <div class="col-md-12"> 
-                        <div>
-                            <label for="message" class="form-label">
-                                Message
-                                <span class="required-asterisk">*</span>
-                            </label>
-                        </div>
-                        <textarea class="form-control" name="Message" id="message" required placeholder="Your Message" rows="6"></textarea>
-                    </div>
+            <br>
+            <br>
 
-                    <div class="col-md-12 text-center">
-                        <button type="submit" class="btn btn-info" id="submitButton">Submit</button>
-                    </div>
-                </form>
-                <br>
+            <!-- Email Input Field -->
+            <div class="col-md-8">
+                    <label for="email">
+                        Email
+                        <span class="required-asterisk">*</span>
+                    </label>
+                <input type="email" class="form-control" name="Email" id="email" required placeholder="johndoe@gmail.com">
+            </div>
+
+            <!-- Phone Number Input Field -->
+            <div class="col-md-4">
+                <label for="phoneNumber" class="form-label mb-0">Phone Number</label>
+                <input type="tel" class="form-control" name="Phone&nbsp;Number" id="phoneNumber" placeholder="(+44)">
+            </div>
+
+            <!-- User Message Input Field -->
+            <div class="col-md-12"> 
+                    <label for="message" class="form-label">
+                        Message
+                        <span class="required-asterisk">*</span>
+                    </label>
+                <textarea class="form-control" name="Message" id="message" required placeholder="Your Message" rows="6"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-info" id="submitButton">Submit</button>
+            </div>
+        </form>
+        <br>
     </div>
     <div class="spacer layered-waves-dark" id="bottomWaves"></div>
 </body>
