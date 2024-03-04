@@ -52,7 +52,7 @@ a{
 /* Media query to remove centering on small screens */
 @media (max-width: 767px) {
     .absolutecenter {
-        position: static;
+        position: static; 
         transform: none;
     }
 }
@@ -76,7 +76,7 @@ a{
         animation: typing 2.5s steps(16, end) !important ;
     }
     .smallScreen{
-        margin-left: 0.5rem;
+        margin-left: 0.25rem;
     }
 }
 
@@ -100,15 +100,20 @@ a{
         display: none;
     }
 
-    #invoiceDashboardImage{
-        max-width: 95%;
+    .invoiceDashboardImage{
+        width: 95%;
         margin-left: 1rem;
+        margin-top: 1rem;
+    }
 
+    .reckittImage{
+        width: 95%;
+        margin-right: 2rem;   
     }
 }
 
 @media (min-width: 993px){
-    #invoiceDashboardImage{
+    .invoiceDashboardImage{
         max-width: 85%;
         margin-left: 6.5rem;
     }
@@ -116,6 +121,10 @@ a{
 
 .smallScreen{
     margin-left: 4.5%;
+}
+
+.reckittImage{
+    margin-left: 2rem;   
 }
 
 
