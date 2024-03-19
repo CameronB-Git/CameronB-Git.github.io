@@ -101,21 +101,45 @@ a{
     }
 
     .invoiceDashboardImage{
-        width: 95%;
+        width: 20rem;
         margin-left: 1rem;
         margin-top: 1rem;
     }
 
+    .singleInvoiceDashboardImage{
+        width: 20rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    
+    }
+
     .reckittImage{
         width: 95%;
-        margin-right: 2rem;   
+        margin-top: 10rem;
     }
 }
 
+
+
 @media (min-width: 993px){
     .invoiceDashboardImage{
-        max-width: 85%;
-        margin-left: 6.5rem;
+        width: 55rem;
+        margin-left: 16rem;
+        margin-top: 1rem;
+    
+    }
+
+    .singleInvoiceDashboardImage{
+        width: 35rem;
+        margin-right: 5rem;
+        margin-top: 1rem;
+    
+    }
+
+    .reckittImage{
+        width: 35rem;
+        margin-left: 16rem;
+    
     }
 }
 
