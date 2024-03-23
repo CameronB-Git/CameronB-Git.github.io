@@ -49,6 +49,11 @@ a{
     left: 4.5rem; right: 0;
 }
 
+.invoiceDashboardImage{
+    border : 1px solid #ffffff;
+    border-radius: 0.3rem;
+}
+
 /* Media query to remove centering on small screens */
 @media (max-width: 767px) {
     .absolutecenter {
