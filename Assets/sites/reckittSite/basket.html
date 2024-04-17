@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/Assets/sites/reckittSite/src/styling.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/de11364571.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/svg+xml" href="/Assets/sites/reckittSite/Assets/reckittLogo_Small.svg">
+    <script src="https://kit.fontawesome.com/de11364571.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/Assets/sites/reckittSite/src/script.js"></script>
     <script type="text/javascript" src="/Assets/sites/reckittSite/src/themeSwitchScript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Your Basket | Reckitt</title>
 </head>
-<body onload="displayProductsInBasket(), loadMode()">
+<body onload="loadMode()">
     <nav class="navbar navbar-expand-md fixed-top py-2">
         <div class="container-fluid">
             <div id="name">
-                <a class="navbar-brand text-white mx-auto w-25" href="#">
+                <a class="navbar-brand text-white mx-auto w-25" href="/index.html">
                     <img src="/Assets/sites/reckittSite/Assets/reckittLogo.svg" width="50%" style="float:left";>
                 </a>
             </div>
@@ -63,7 +63,7 @@
     
 
     <!-- Footer -->
-    <footer class="mt-5">
+    <footer class="changingFooter mt-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-5">
@@ -91,5 +91,23 @@
             </div>
         </div>
     </footer>
+    <script>
+        selectedProductIndex = getItemIndex() || [];
+        var remNeeded = 0;
+        var screenWidth = window.innerWidth;
+              
+        footer = document.querySelector('.changingFooter');
+        footer.style.bottom = '0';
+        
+        if (selectedProductIndex.length >= 2){
+            footer.style.position = 'inherit';
+            remNeeded = `${5 * (selectedProductIndex.length)}`;
+            footer.style.top = `${remNeeded}rem`;
+        } 
+        else{
+            if (screenWidth <= 768) footer.style.position = 'inherit'; 
+            else footer.style.position = 'fixed'; 
+        }
+    </script>
 </body>
 </html>
