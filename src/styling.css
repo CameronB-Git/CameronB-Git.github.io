@@ -26,6 +26,14 @@ p{
     left: 4.5rem; right: 0;
 }
 
+.spacer {
+    aspect-ratio: 960/200;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .invoiceDashboardImage{border: 1px solid #ffffff; border-radius: 0.3rem;} /* Image --> Add Border */
 
 /* Media query to remove centering on small screens */
