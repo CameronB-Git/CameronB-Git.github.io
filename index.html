@@ -2,17 +2,13 @@
 <html lang="en">
 <head>
     <script>
-        // IMPORTANT: set this in <HEAD> top before any other tag.
         var mode = localStorage.getItem("mode");
         if (mode == "Light"){
-            document.documentElement.setAttribute('data-bs-theme','light')
-        
+            document.documentElement.setAttribute('data-bs-theme','light');
             const bottomWavesImage = document.getElementById("bottomWaves"); 
-            bottomWavesImage.setAttribute('class', 'spacer layered-waves-light')
+            bottomWavesImage.setAttribute('class', 'spacer layered-waves-light');
         }
-        else{
-            document.documentElement.setAttribute('data-bs-theme','dark')
-        }
+        else{document.documentElement.setAttribute('data-bs-theme','dark')}
     </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -98,7 +94,6 @@
             </div>
         </div>
     </div>
-    <script src="" async defer></script>
     <div class="spacer layered-waves-dark" id="bottomWaves" style="margin-top: 30px;"></div>
 </body>
 </html>
