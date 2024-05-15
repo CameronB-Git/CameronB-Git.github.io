@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <script>
-        // IMPORTANT: set this in <HEAD> top before any other tag.
         var mode = localStorage.getItem("mode");
         if (mode == "Light"){
-        document.documentElement.setAttribute('data-bs-theme','light')
+            document.documentElement.setAttribute('data-bs-theme','light');
+            const bottomWavesImage = document.getElementById("bottomWaves"); 
+            bottomWavesImage.setAttribute('class', 'spacer layered-waves-light');
         }
-        else{
-        document.documentElement.setAttribute('data-bs-theme','dark')
-        }
+        else{document.documentElement.setAttribute('data-bs-theme','dark')}
     </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -127,6 +126,10 @@
                 <a href="#" class="smallScreen mb-4" id="marginLeft"><b>Mini Platformer</b></a>
                 <span class="arrow">--></span>
                 <img src="/Assets/Images/platformGame/gamePreviewImage.png" class="smallScreen" width=35% class="" style="margin-top: 2rem;">
+
+                <!-- <iframe src="/Assets/sites/NEWTestBuildGZP/index.html" width="1536px" height="673px" style="aspect-ratio: auto 1536 / 673;"></iframe>
+
+                <br><br><br><br> -->
 
                 <!-- App Development - Temp/Humidity Application -->
                 <a href="#" class="smallScreen" id="marginLeft"><b>Temp/Humidity Tracker</b></a>
