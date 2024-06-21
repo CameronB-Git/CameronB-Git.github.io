@@ -103,7 +103,7 @@ p{
 }
 
 .smallScreen{margin-left: 4.5%;}
-.reckittImage{margin-left: 2rem;}
+.reckittImage{margin-left: 2rem; border: 1px solid white; border-radius: 0.3rem;}
 
 /* Sets Text Colour for Selected Nav Button */
 #selectedButton{color: #cbd1cc;}
