@@ -151,6 +151,68 @@ label.form-control{margin-bottom: 0px;}
 #honeypot{display: none;} /* Hides honeypot field */
 
 /* Decor */
+.switch {
+    --dark-sky: #313032;
+    --moon: #aeaaae;
+    --light-sky: #8f44fd;
+    --sun: #f7f7f7;
+    display: inline-block;
+    position: relative;
+    border-radius: 5em;
+    cursor: pointer;
+    width: 60px;
+    height: 32px;
+    overflow: hidden;
+    scale: 0.7;
+    transition: all 0.5s;
+}
+
+.switch .back {
+    background-color: var(--dark-sky);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.switch .moon {
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    height: 24px;
+    fill: var(--moon);
+    transition: 0.5s;
+}
+
+.switch .sun {
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    height: 24px;
+    fill: var(--sun);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.switch .checkbox {
+    opacity: 0;
+}
+
+.switch .checkbox:checked ~ .back {
+    background-color: var(--light-sky);
+}
+
+.switch .checkbox:checked ~ .moon {
+    transform: translateX(24px) rotate(180deg);
+    opacity: 0;
+}
+
+.switch .checkbox:checked ~ .sun {
+    transform: translateX(24px) rotate(180deg);
+    opacity: 1;
+}
 
 /* Layered Waves */
 .layered-waves-dark {background-image: url("/Assets/SVGs/layered-waves-haikei-dark.svg");}
