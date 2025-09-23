@@ -64,3 +64,7 @@ function collapseMenu(){
         navbar.setAttribute('class', 'navbar-collapse collapse')
     }
 }
+
+function setBGColour(){
+    document.documentElement.setAttribute('data-bs-theme', '#1E1E1E')
+}

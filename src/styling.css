@@ -1,29 +1,87 @@
 @charset "utf-8";
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 /* Nav Stuff */
-nav {background-color: #17BEBB;}
+/* nav {background-color: #17BEBB;} */
+
+
 #navButton{color: #ffffff;}
 #navButton:hover{color: #FF8552;}
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
 /* nav {
     background-color: #17BEBB;
 } */
 
-#navButton{
-    color: #ffffff;
+.bgColour{
+    background-color: #1E1E1E;
+}
+
+.divCenter{
+    text-align: center;
+}
+
+:root{
+    --extra-light: 200;
+    --light: 300;
+    --normal: 400;
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+    --extra-bold: 800;
+}
+
+.image-centre{
+    padding-left: 18rem;
+    opacity: 0.6;
+    width: 100%;
+}
+
+.lowOpacity{
+    opacity: 0;
+}
+
+.navLinkColour{
+    color: white !important;
+}
+
+.navButton{
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: var(--light);
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+}
+
+.nameTag{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 6.5rem;
+}
+
+.chosenFont{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+.nameTopLeft{
+    font-size: 1.55rem;
+}
+
+
+.y-padding{
+    padding-top: 15rem;
 }
 
 #navButton:hover{
     color: #FF8552 ;
 }
->>>>>>> Stashed changes
+
+.x-padding{
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
 
 /* Sets the Auto Margin Feature */
 .mx-auto {margin-left: auto; margin-right: auto;}
