@@ -5,6 +5,56 @@
 /* nav {background-color: #17BEBB;} */
 
 
+/* Section background */
+.expertise-section {
+  background-color: #1E1E1E; /* dark gray */
+}
+
+/* Card styling */
+.expertise-card {
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: #1a1a1a; /* slightly lighter than section bg */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 275px; /* keeps cards even */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Hover animation */
+.expertise-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Headings inside cards */
+.expertise-card h4 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+/* Colored highlights under specific words */
+.highlight-pink {
+  border-bottom: 3px solid #ff4da6;
+}
+
+.highlight-blue {
+  border-bottom: 3px solid #3ec4ff;
+}
+
+.highlight-orange {
+  border-bottom: 3px solid #ff7a29;
+}
+
+/* Text */
+.expertise-card p {
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
 #navButton{color: #ffffff;}
 #navButton:hover{color: #FF8552;}
 
@@ -63,6 +113,7 @@
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 400;
     letter-spacing: 0.1rem;
+    width: 100%;
 }
 
 .nameTopLeft{
