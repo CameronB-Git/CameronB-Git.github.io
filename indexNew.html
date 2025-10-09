@@ -1,96 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- <script>
-        // IMPORTANT: set this in <HEAD> top before any other tag.
-        var mode = localStorage.getItem("mode");
-        if (mode == "Light"){
-            document.documentElement.setAttribute('data-bs-theme','light')
-        
-            const bottomWavesImage = document.getElementById("bottomWaves"); 
-            bottomWavesImage.setAttribute('class', 'spacer layered-waves-light')
-        }
-        else{
-            document.documentElement.setAttribute('data-bs-theme','dark')
-        }
-    </script> -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/src/styling.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="/src/themeSwitchScript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Portfolio - Home</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/src/styling.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Portfolio - Home</title>
 </head>
+
 <body class="bgColour">
-    <nav class="navbar navbar-expand-md fixed-top py-5">
-        <div class="container-fluid">
-            <div id="name">
-                <a class="navbar-brand text-white chosenFont nameTopLeft mx-auto w-25 px-5" href="#" id="nameClass">
-                    <b>Cameron Branston</b>
-                </a>
-            </div>
-        
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"> </span>
-            </button>
+  <nav class="navbar navbar-expand-md fixed-top py-5">
+    <div class="container-fluid">
+      <div id="name">
+        <a class="navbar-brand text-white chosenFont nameTopLeft mx-auto w-25 px-5" href="#" id="nameClass">
+          <b>Cameron Branston</b>
+        </a>
+      </div>
 
-            <div class="collapse navbar-collapse absolutecenter" id="navbarNav">
-                <ul class="navbar-nav mx-auto ">
-                    <!-- Home Nav -->
-                    <li class="nav-item">
-                        <a class="nav-link active x-padding navButton navLinkColour" href="#">
-                            <b>Home</b>
-                        </a>
-                    </li> 
-                    <!-- Expertise Nav -->
-                    <li class="nav-item">
-                        <a class="nav-link active x-padding navButton navLinkColour" href="#expertise">
-                            <b>Expertise</b>
-                        </a>
-                    </li>
-                    <!-- Projects Nav -->
-                    <li class="nav-item">
-                        <a class="nav-link active x-padding navButton navLinkColour" href="#projects">
-                            <b>Projects</b>
-                        </a>
-                    </li>
-                    <!-- Education Nav -->
-                    <li class="nav-item">
-                        <a class="nav-link active x-padding navButton navLinkColour" href="#education">
-                            <b>Education</b>
-                        </a>
-                    </li>
-                    <!-- Contact Nav -->
-                    <li class="nav-item">
-                        <a class="nav-link active x-padding navButton navLinkColour" href="#contact">
-                            <b>Contact</b>
-                        </a>
-                    </li>
-                </ul>
-                <button type="button" class="btn p-1" onclick="toggleMode()" id="btnSwitch"></button>
-            </div>
-            
-            <div class="w-25" id="preSpacing">
-                <pre class="text-white"></pre>
-            </div>
-        </div>
-    </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"> </span>
+      </button>
 
-    <!-- Name & Tagline -->
-    <div class="container y-padding">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="mt-3 text-center typewriter nameTag"><b>Cameron Branston</b></h1>
-                    <h5 class="text-center chosenFont nameTag" style="font-size: 1.4rem;">Computer Science Student & Aspiring Software Developer.</h5>
-                </div>
-            </div>
-        </div>
+      <div class="collapse navbar-collapse absolutecenter" id="navbarNav">
+        <ul class="navbar-nav mx-auto ">
+          <!-- Home Nav -->
+          <li class="nav-item">
+            <a class="nav-link active x-padding navButton navLinkColour" href="#">
+              <b>Home</b>
+            </a>
+          </li>
+          <!-- Expertise Nav -->
+          <li class="nav-item">
+            <a class="nav-link active x-padding navButton navLinkColour" href="#expertise">
+              <b>Expertise</b>
+            </a>
+          </li>
+          <!-- Projects Nav -->
+          <li class="nav-item">
+            <a class="nav-link active x-padding navButton navLinkColour" href="#projects">
+              <b>Projects</b>
+            </a>
+          </li>
+          <!-- Education Nav -->
+          <li class="nav-item">
+            <a class="nav-link active x-padding navButton navLinkColour" href="#education">
+              <b>Education</b>
+            </a>
+          </li>
+          <!-- Contact Nav -->
+          <li class="nav-item">
+            <a class="nav-link active x-padding navButton navLinkColour" href="#contact">
+              <b>Contact</b>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w-25" id="preSpacing">
+        <pre class="text-white"></pre>
+      </div>
     </div>
+  </nav>
 
-    <br><br><br><br><br>
+  <!-- Name & Tagline -->
+  <div class="container y-padding">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="mt-3 text-center typewriter nameTag"><b>Cameron Branston</b></h1>
+        <h5 class="text-center chosenFont nameTag" style="font-size: 1.4rem;">Computer Science Student & Aspiring
+          Software Developer.</h5>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <br><br><br><br><br>
 
   <!-- Expertise Section -->
   <section id="expertise" class="expertise-section py-5 text-white">
@@ -98,7 +88,7 @@
     <div class="container">
       <h2 class="text-center mb-5">My Expertise</h2>
       <div class="row g-1">
-        
+
         <!-- Card 1 -->
         <div class="col-md-4">
           <div class="expertise-card h-100">
@@ -107,7 +97,10 @@
               <div class="me-3">
                 <div class="icon-box-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
-                    <path d="M18,34.111l-1.667,6.667L14.111,43H31.889l-2.222-2.222L28,34.111M3,25.222H43M7.444,34.111H38.556A4.444,4.444,0,0,0,43,29.667V7.444A4.444,4.444,0,0,0,38.556,3H7.444A4.444,4.444,0,0,0,3,7.444V29.667A4.444,4.444,0,0,0,7.444,34.111Z" transform="translate(-2 -2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                    <path
+                      d="M18,34.111l-1.667,6.667L14.111,43H31.889l-2.222-2.222L28,34.111M3,25.222H43M7.444,34.111H38.556A4.444,4.444,0,0,0,43,29.667V7.444A4.444,4.444,0,0,0,38.556,3H7.444A4.444,4.444,0,0,0,3,7.444V29.667A4.444,4.444,0,0,0,7.444,34.111Z"
+                      transform="translate(-2 -2)" fill="none" stroke="#fff" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="2"></path>
                   </svg>
                 </div>
               </div>
@@ -159,82 +152,157 @@
           </div>
         </div>
 
+      </div>
     </div>
+  </section>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
   </div>
-</section>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-<!-- 
-    <div class="container y-padding">
-        <h1 class="text-center chosenFont navLinkColour">My Expertise</h1>
-    <div class="row g-0 mt-5 pt-2">
-        <div class="col-md-4 d-flex justify-content-center">
-            <div class="bg-transparant" style="height: 325px; width: 100%; border-width: 4px; border-color: rgb(162, 162, 162); border-style:solid; border-right:none; aspect-ratio: 1/1;">
-                <div class="divCenter navLinkColour" style="margin-right: 1.15rem;">
-                    <div class="container">
-                        <div class="col-md-6">
 
-                            <img src="/Assets/Images/homepageAssests/computer-screen-with-asterisk-symbol.svg" class="navLinkColour" style="width: 28%; justify-content:left; color: white;">
-                            <div class="icon-box-icon "> <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"><path d="M18,34.111l-1.667,6.667L14.111,43H31.889l-2.222-2.222L28,34.111M3,25.222H43M7.444,34.111H38.556A4.444,4.444,0,0,0,43,29.667V7.444A4.444,4.444,0,0,0,38.556,3H7.444A4.444,4.444,0,0,0,3,7.444V29.667A4.444,4.444,0,0,0,7.444,34.111Z" transform="translate(-2 -2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div>
-                        </div>
-                        <div class="col-md-6">
-                            <h3 class="mt-4" style="text-align: left; margin-left: 7rem;">Software <br> Development</h3>
+  <!-- Projects Section -->
+  <section class="text-white" id="projects">
+    <h2 class="text-center mb-5 text-white">My Projects</h2>
 
-                        </div>
-                    </div>
-                </div>
+    <div class="container">
+      <div class="row g-2"> <!-- g-0 removes gap between cards -->
+
+        <!-- Project Card -->
+        <div class="col-md-4 mb-4">
+          <a href="/src/projects/dungeonDash.html" class="noLinkUnderline">
+            <div class="project-card">
+              <div class="project-img">
+                <img src="/Assets/Images/platformGame/gamePreviewImage.png" alt="Project 1" class="img-fluid">
+              </div>
+              <div class="project-info">
+                <h4>Dungeon Dash</h4>
+                <p>Game Development (C#)</p>
+              </div>
             </div>
+          </a>
         </div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <div class="bg-transparant" style="height: 325px; width: 100%; border-width: 4px; border-color: rgb(162, 162, 162); border-style:solid; aspect-ratio: 1/1;"></div>
+
+        <!-- Repeat -->
+        <div class="col-md-4 mb-4">
+          <div class="project-card">
+            <div class="project-img">
+              <img src="/Assets/Images/reckittRetail/homepage.png" alt="Project 2" class="img-fluid">
+            </div>
+            <div class="project-info">
+              <h4>Reckitt Retail Site</h4>
+              <p>Web Development</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <div class="bg-transparant" style="height: 325px; width: 100%; border-width: 4px; border-color: rgb(162, 162, 162); border-style:solid; border-left: none; aspect-ratio: 1/1;"></div>
+
+        <div class="col-md-4 mb-4">
+          <div class="project-card">
+            <div class="project-img">
+              <img src="/Assets/Images/Cookie_Clicker_Main.jpg" alt="Cookie Clicker" class="img-fluid">
+            </div>
+            <div class="project-info">
+              <h4>Cookie Clicker</h4>
+              <p>App Development (Kotlin)</p>
+            </div>
+          </div>
         </div>
-    </div> -->
-</div>
+
+        <div class="col-md-4 mb-4">
+          <div class="project-card">
+            <div class="project-img terminal-bg">
+              <div class="terminal-header windows-style">
+                <span class="terminal-title">CinemaPOS.exe     </span>
+                <div class="terminal-controls">
+                  <span class="ctrlMini">─</span>
+                  <span class="ctrl">□</span>
+                  <span class="ctrl">✕</span>
+                </div>
+              </div>
+              <div class="terminal-body">
+                <p class="terminal-line">&lt;cinema-pos&gt; Loading system modules...</p>
+                <p class="terminal-line">&lt;cinema-pos&gt; Initializing staff records...</p>
+                <p class="terminal-line">&lt;cinema-pos&gt; Ready for transactions.</p>
+                <p class="terminal-line cursor">&lt;cinema-pos&gt;_</p>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4>Cinema POS System</h4>
+              <p>Console Application (C#)</p>
+            </div>
+          </div>
+        </div>
 
 
 
-<!-- Work Section -->
-    <section id="work">
-      <br><br><br><br>
-      <h2 class="text-center mb-5 text-white">My Work</h2>
+      </div>
+    </div>
+  </section>
 
-    </section>
+  <br><br><br><br><br><br>
+  <!-- Projects Projects Over -->
 
-    <br><br><br><br><br><br>
-<!-- Work Section Over -->
+  <!-- Education Section -->
+  <section id="education">
+    <br><br><br><br>
+    <h2 class="text-center mb-5 text-white">My Education</h2>
 
-<!-- Projects Section -->
-    <section id="projects">
-      
-      <h2 class="text-center mb-5 text-white">My Projects</h2>
+  </section>
 
-    </section>
+  <br><br><br><br><br><br>
+  <!-- Work Education Over -->
 
-    <br><br><br><br><br><br>
-<!-- Projects Projects Over -->
-
-<!-- Education Section -->
-    <section id="education">
-      <br><br><br><br>
-      <h2 class="text-center mb-5 text-white">My Education</h2>
-
-    </section>
-
-    <br><br><br><br><br><br>
-<!-- Work Education Over -->
-
-<!-- Contact Section -->
+  <footer class="footerBGColour" style="height: 25rem;">
+    <!-- Contact Section -->
     <section id="contact">
-      <br><br><br><br>
-      <h2 class="text-center mb-5 text-white">Contact</h2>
+      <!-- <h2 class="text-center mb-5 text-white">Contact</h2> -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p onclick="copyEmail()" class="chosenFont mt-5 pt-2 text-white text-center highlight-orange email-copy"
+              style="font-size: 1.3rem;">cameronbranston@gmail.com<span class="tooltip">Click to Copy</span></p>
+            <p onclick="goToWebsite('https://www.linkedin.com/in/cameron-branston/')"
+              class="socialLinks mt-5 line-spacing" style="font-size: 1.3rem;">LinkedIn</p>
+            <p onclick="goToWebsite('')" class="socialLinks mt-4 line-spacing" style="font-size: 1.3rem;">GitHub</p>
+            <p class="cvStuff mt-4 line-spacing" style="font-size: 1.3rem;">
+              <a href="/Assets/CB-CV (Software Developer).pdf" target="_blank"
+                class="socialLinks noLinkUnderline">View</a> or
+              <a href="/Assets/CB-CV (Software Developer).pdf" download class="socialLinks noLinkUnderline">download</a>
+              my CV
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <p class="chosenFont mt-5 pt-2 text-white text-center">Currently Learning</p>
+          </div>
+
+        </div>
+      </div>
+
 
     </section>
 
-    <br><br><br><br><br><br>
-<!-- Contact Section Over -->
-    <script src="" async defer></script>
+    <!-- Contact Section Over -->
+  </footer>
+
+
+  <script src="" async defer></script>
+  <script>
+    function copyEmail() {
+      const email = "cameronbranston@gmail.com";
+      navigator.clipboard.writeText(email).then(() => {
+        const tooltip = document.querySelector(".tooltip");
+        tooltip.textContent = "Copied!";
+        setTimeout(() => (tooltip.textContent = "Click to Copy"), 1500);
+      });
+    }
+  </script>
+
+  <script>
+    function goToWebsite(url) {
+      window.open(url, "_blank");
+    }
+  </script>
 </body>
+
 </html>

@@ -1,14 +1,61 @@
 @charset "utf-8";
 
-
-/* Nav Stuff */
-/* nav {background-color: #17BEBB;} */
-
-
 /* Section background */
 .expertise-section {
   background-color: #1E1E1E; /* dark gray */
 }
+
+#projects {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.project-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #111;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.project-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 230px; /* fixed height keeps cards equal */
+  background-color: #111;
+  overflow: hidden;
+}
+
+.project-img img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain; /* keeps full image visible */
+}
+
+.project-info {
+  background-color: #191919;
+  padding: 20px;
+}
+
+.project-info h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.project-info p {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin: 0;
+}
+
 
 /* Card styling */
 .expertise-card {
@@ -36,6 +83,156 @@
   line-height: 1.4;
 }
 
+/* Base styling for the email */
+.email-copy {
+  position: relative;
+  display: inline-block; /* ensures tooltip positions nicely */
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 0.5rem 0.21rem; /* slightly smaller padding */
+  line-height: 1; /* keeps it within the line */
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  vertical-align: middle; /* aligns nicely with surrounding text */
+}
+
+/* Hover animation (similar to your card style) */
+.email-copy:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  border-color: #ff8800; /* subtle orange highlight */
+}
+
+/* Tooltip */
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff8800;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+
+/* Tooltip arrow */
+.tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ff8800 transparent transparent transparent;
+}
+
+/* ===== Terminal container ===== */
+.terminal-bg {
+  background-color: #0d0d0d;
+  border-radius: 6px 6px 0 0;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #222;
+  box-shadow: inset 0 0 15px rgba(0, 255, 136, 0.05);
+}
+
+/* ===== Windows-style title bar ===== */
+.terminal-header.windows-style {
+  background: linear-gradient(90deg, #1a1a1a, #2a2a2a);
+  color: #ccc;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-bottom: 1px solid #333;
+}
+
+.terminal-title {
+  font-weight: 500;
+  user-select: none;
+}
+
+.terminal-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ctrl {
+  font-size: 0.8rem;
+  line-height: 1;
+  opacity: 0.7;
+  cursor: default;
+  user-select: none;
+}
+
+.ctrlMini{
+    margin-left: 0.5rem;
+}
+.ctrl:last-child {
+  color: #ff4d4d; /* red close icon */
+  opacity: 0.9;
+}
+
+/* ===== Terminal content ===== */
+.terminal-body {
+  padding: 15px;
+  font-family: "Consolas", monospace;
+  font-size: 0.9rem;
+  color: #00ff88;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.terminal-line {
+  margin: 0;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* ===== Blinking cursor ===== */
+.cursor::after {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 1em;
+  background-color: #00ff88;
+  margin-left: 2px;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to { visibility: hidden; }
+}
+
+
+@keyframes blink {
+  to { visibility: hidden; }
+}
+
+
+
+/* Show tooltip on hover */
+.email-copy:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -4px);
+}
+
 /* Colored highlights under specific words */
 .highlight-pink {
   border-bottom: 3px solid #ff4da6;
@@ -55,20 +252,14 @@
   color: #ddd;
 }
 
-#navButton{color: #ffffff;}
-#navButton:hover{color: #FF8552;}
-
-/* nav {
-    background-color: #17BEBB;
-} */
-
 .bgColour{
     background-color: #1E1E1E;
 }
 
-.divCenter{
-    text-align: center;
+.footerBGColour{
+    background-color: #1a1a1a;
 }
+
 
 :root{
     --extra-light: 200;
@@ -78,16 +269,6 @@
     --semi-bold: 600;
     --bold: 700;
     --extra-bold: 800;
-}
-
-.image-centre{
-    padding-left: 18rem;
-    opacity: 0.6;
-    width: 100%;
-}
-
-.lowOpacity{
-    opacity: 0;
 }
 
 .navLinkColour{
@@ -116,17 +297,41 @@
     width: 100%;
 }
 
+.socialLinks{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.1rem;
+    width: 100%;
+}
+
+.cvStuff{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.1rem;
+    width: 100%;
+}
+
+.socialLinks:hover{
+    color: cyan;
+    cursor: pointer;
+}
+
+.noLinkUnderline{
+    text-decoration: none;
+}
+
+.line-spacing{
+    line-height: 100%;
+}
+
 .nameTopLeft{
     font-size: 1.55rem;
 }
 
-
 .y-padding{
     padding-top: 15rem;
-}
-
-#navButton:hover{
-    color: #FF8552 ;
 }
 
 .x-padding{
@@ -136,17 +341,11 @@
 
 /* Sets the Auto Margin Feature */
 .mx-auto {margin-left: auto; margin-right: auto;}
-.ms-25{margin-left: 25%;}
-#marginLeft{margin-left: 25%;}
-
-a{color:#FF8552;} /* Sets Styling for Hyper Links */
 
 p{
     max-width: 55%; display: block;
     margin: auto; margin-left: 25%;
 }
-
-#textSize{font-size: 20px;}
 
 /* Sets Nav Options to Absolute Center */
 .absolutecenter {
@@ -154,16 +353,6 @@ p{
     position: absolute;
     left: 4.5rem; right: 0;
 }
-
-.spacer {
-    aspect-ratio: 960/200;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.invoiceDashboardImage{border: 1px solid #ffffff; border-radius: 0.3rem;} /* Image --> Add Border */
 
 /* Media query to remove centering on small screens */
 @media (max-width: 767px) {.absolutecenter {position: static; transform: none;}}
@@ -181,171 +370,7 @@ p{
         display: inline-block; overflow: hidden;
         animation: typing 2.5s steps(16, end) !important ;
     }
-
-    .smallScreen{
-        width: 95%;
-        margin-top: 1.5rem; margin-left: 1rem;
-        display: block;
-    }
-    
-    .smallScreenMobile{
-        display: block;
-        width: 70%;
-        margin-top: 1.5rem;
-    }
-    
-    .arrow{display: none;}
-    
-    .invoiceDashboardImage{
-        width: 20rem;
-        margin-left: 1rem; margin-top: 1rem;
-    }
-    
-    .singleInvoiceDashboardImage{
-        width: 20rem;
-        margin-left: 1rem; margin-top: 1rem;
-    }
-    
-    .reckittImage{
-        width: 95%;
-        margin-top: 10rem;
-    }
 }
-
-@media (min-width: 993px){
-    .invoiceDashboardImage{
-        width: 55rem;
-        margin-left: 16rem;
-        margin-top: 1rem;
-    }
-
-    .singleInvoiceDashboardImage{
-        width: 35rem;
-        margin-right: 5rem;
-        margin-top: 1rem;
-    }
-
-    .reckittImage{
-        width: 35rem;
-        margin-left: 16rem;
-    }
-}
-
-.smallScreen{margin-left: 4.5%;}
-.reckittImage{margin-left: 2rem; border: 1px solid white; border-radius: 0.3rem;}
-
-/* Sets Text Colour for Selected Nav Button */
-#selectedButton{color: #cbd1cc;}
-
-/* Sets Styling for id="subheading" */
-#subheading{
-    text-align: center;
-    color: #3d3d3d
-}
-
-[data-bs-theme='dark'] #subheading,
-[data-bs-theme='dark'] #submitButton{ 
-    color: white;
-}
-
-.required-asterisk {color: red; margin-left: 4px;}
-
-/* Sets Styling for Input Fields */
-input.form-control{
-    width: 100%;
-    margin-top: 5px; /* Margin may cause phone number entry to be weird */
-    border-width: 1px; border-color: #FF8552;
-}
-textarea.form-control{
-    width: 100%;
-    align-items: center;
-    border-width: 1px; border-color: #FF8552;
-}
-label.form-control{margin-bottom: 0px;}
-
-.btn-info{
-    width: 60%;
-    letter-spacing: 0.1rem;
-    transition: all 0.2s ease-in-out;
-    background: transparent; border-color: #FF8552;
-    text-align: center; align-items: center;
-}
-
-.btn-info:hover{
-    color: #ffffff;
-    transform: scale(1.02);
-    background-color: #FF8552;
-}
-
-#honeypot{display: none;} /* Hides honeypot field */
-
-/* Decor */
-.switch {
-    --dark-sky: #313032;
-    --moon: #aeaaae;
-    --light-sky: #8f44fd;
-    --sun: #f7f7f7;
-    display: inline-block;
-    position: relative;
-    border-radius: 5em;
-    cursor: pointer;
-    width: 60px;
-    height: 32px;
-    overflow: hidden;
-    scale: 0.7;
-    transition: all 0.5s;
-}
-
-.switch .back {
-    background-color: var(--dark-sky);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    transition: 0.5s ease-in-out;
-}
-
-.switch .moon {
-    position: absolute;
-    left: 6px;
-    top: 4px;
-    height: 24px;
-    fill: var(--moon);
-    transition: 0.5s;
-}
-
-.switch .sun {
-    position: absolute;
-    left: 6px;
-    top: 4px;
-    height: 24px;
-    fill: var(--sun);
-    transition: 0.5s;
-    opacity: 0;
-}
-
-.switch .checkbox {
-    opacity: 0;
-}
-
-.switch .checkbox:checked ~ .back {
-    background-color: var(--light-sky);
-}
-
-.switch .checkbox:checked ~ .moon {
-    transform: translateX(24px) rotate(180deg);
-    opacity: 0;
-}
-
-.switch .checkbox:checked ~ .sun {
-    transform: translateX(24px) rotate(180deg);
-    opacity: 1;
-}
-
-/* Layered Waves */
-.layered-waves-dark {background-image: url("/Assets/SVGs/layered-waves-haikei-dark.svg");}
-.layered-waves-light{background-image: url("/Assets/SVGs/layered-waves-haikei-light.svg");}
 
 /* Typewriter Effect */
 .typewriter {overflow: hidden;white-space: nowrap;}
