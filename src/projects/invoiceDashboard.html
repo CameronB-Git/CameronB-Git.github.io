@@ -14,48 +14,48 @@
 </head>
 
 <body class="bgColour">
-    <nav class="navbar navbar-expand-md fixed-top py-5">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark" id="mainNav">
         <div class="container-fluid">
             <div id="name">
-                <a class="navbar-brand text-white chosenFont nameTopLeft mx-auto w-25 px-5" href="#" id="nameClass">
+                <a class="navbar-brand text-white chosenFont nameTopLeft mx-auto w-25" href="#" id="nameClass">
                     <b>Cameron Branston</b>
                 </a>
             </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"> </span>
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse absolutecenter" id="navbarNav">
                 <ul class="navbar-nav mx-auto ">
                     <!-- Home Nav -->
                     <li class="nav-item">
-                        <a class="nav-link active x-padding navButton navLinkColour" href="/indexNew.html">
+                        <a class="nav-link active x-padding navButton navLinkColour" href="/index.html">
                             <b>Home</b>
                         </a>
                     </li>
                     <!-- Expertise Nav -->
                     <li class="nav-item">
-                        <a class="nav-link active x-padding navButton navLinkColour" href="/indexNew.html#expertise">
+                        <a class="nav-link active x-padding navButton navLinkColour" href="/index.html#expertise">
                             <b>Expertise</b>
                         </a>
                     </li>
                     <!-- Projects Nav -->
                     <li class="nav-item">
-                        <a class="nav-link active x-padding navButton navLinkColour" href="/indexNew.html#projects">
+                        <a class="nav-link active x-padding navButton navLinkColour" href="/index.html#projects">
                             <b>Projects</b>
                         </a>
                     </li>
                     <!-- Education Nav -->
                     <li class="nav-item">
-                        <a class="nav-link active x-padding navButton navLinkColour" href="/indexNew.html#education">
+                        <a class="nav-link active x-padding navButton navLinkColour" href="/index.html#education">
                             <b>Education</b>
                         </a>
                     </li>
                     <!-- Contact Nav -->
                     <li class="nav-item">
-                        <a class="nav-link active x-padding navButton navLinkColour" href="/indexNew.html#contact">
+                        <a class="nav-link active x-padding navButton navLinkColour" href="/index.html#contact">
                             <b>Contact</b>
                         </a>
                     </li>
@@ -147,39 +147,22 @@
                     <div class="col-12">
                         <img src="/Assets/Images/55groupSite/invoiceList.png" class="imgBorder" alt="Site Screenshot 4">
                     </div>
-
                 </div>
-
-
                 <br><br><br>
             </div>
         </div>
     </div>
 
-    <!-- Container for Text
-    <div class="container mt-5 pt-5">
-        <div class="row">
-            <div class="col-md-12" id="textSize">                
-                <a href="\Assets\sites\55groupSite" 
-                    target="_blank" id="marginLeft"><b>Invoice Dashboard</b></a> 
-                <p class="mt-2 mb-5">During my time at Ron Dearing UTC, I took part 
-                    in a week-long Work Experience opportunity at <b>The 55 Group</b>, a small Web Development/Procurement
-                    business based in Hull. In this period, we were exposed to <b>JavaScript</b> frameworks such as
-                    <b>Node.js</b> and <b>Vue.js</b>, enabling us to create a fully functional Invoice Dashboard.
-                    This was a great experience for me, as it allowed me to gain a better understanding of different
-                    programming languages, as well as giving me a chance to work with new technologies. 
-                    <a href="https://github.com/OLiviER-808s/55group-work-experience-2023" target="_blank">GitHub Repository.</a>
-                </p>
-
-                <img src="" class="mt-2 invoiceDashboardImage">
-                <img src="" class="mt-2 invoiceDashboardImage">
-                <img src="" class="mt-2 invoiceDashboardImage">
-                <br><br><br>
-            </div>
-        </div>
-    </div> -->
-
-    <div class="spacer layered-waves-dark" id="bottomWaves"></div>
+    <script>
+        window.addEventListener("scroll", function () {
+            const nav = document.getElementById("mainNav");
+            if (window.scrollY > 300) {
+                nav.classList.add("scrolled");
+            } else {
+                nav.classList.remove("scrolled");
+            }
+        });
+    </script>
 </body>
 
 </html>

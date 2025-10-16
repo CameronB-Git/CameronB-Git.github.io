@@ -1,5 +1,24 @@
 @charset "utf-8";
 
+
+
+/* Default navbar (transparent, more padding) */
+#mainNav {
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Scrolled navbar (adds background + shadow + container look) */
+#mainNav.scrolled {
+  background-color: rgba(35, 35, 35, 0.9); /* dark background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+
 /* Section background */
 .expertise-section {
   background-color: #1E1E1E; /* dark gray */
@@ -314,6 +333,12 @@
     font-size: 6.5rem;
 }
 
+@media (max-width: 767px){
+  .nameTag{
+    font-size: 2.25rem;
+  }
+}
+
 .chosenFont{
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 400;
@@ -360,6 +385,13 @@
 
 .nameTopLeft{
     font-size: 1.55rem;
+    padding-left: 3rem;
+}
+
+@media (max-width: 767px) {
+  .nameTopLeft {
+    padding-left: 0.5rem;
+  }
 }
 
 .y-padding{

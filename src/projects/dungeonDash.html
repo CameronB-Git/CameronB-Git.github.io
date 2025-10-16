@@ -15,48 +15,48 @@
 </head>
 
 <body class="bgColour">
-    <nav class="navbar navbar-expand-md fixed-top py-5">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark" id="mainNav">
         <div class="container-fluid">
             <div id="name">
-                <a class="navbar-brand text-white chosenFont nameTopLeft mx-auto w-25 px-5" href="#" id="nameClass">
+                <a class="navbar-brand text-white chosenFont nameTopLeft mx-auto w-25" href="#" id="nameClass">
                     <b>Cameron Branston</b>
                 </a>
             </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"> </span>
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse absolutecenter" id="navbarNav">
                 <ul class="navbar-nav mx-auto ">
                     <!-- Home Nav -->
                     <li class="nav-item">
-                        <a class="nav-link active x-padding navButton navLinkColour" href="#">
+                        <a class="nav-link active x-padding navButton navLinkColour" href="/index.html">
                             <b>Home</b>
                         </a>
                     </li>
                     <!-- Expertise Nav -->
                     <li class="nav-item">
-                        <a class="nav-link active x-padding navButton navLinkColour" href="#expertise">
+                        <a class="nav-link active x-padding navButton navLinkColour" href="/index.html#expertise">
                             <b>Expertise</b>
                         </a>
                     </li>
                     <!-- Projects Nav -->
                     <li class="nav-item">
-                        <a class="nav-link active x-padding navButton navLinkColour" href="#projects">
+                        <a class="nav-link active x-padding navButton navLinkColour" href="/index.html#projects">
                             <b>Projects</b>
                         </a>
                     </li>
                     <!-- Education Nav -->
                     <li class="nav-item">
-                        <a class="nav-link active x-padding navButton navLinkColour" href="#education">
+                        <a class="nav-link active x-padding navButton navLinkColour" href="/index.html#education">
                             <b>Education</b>
                         </a>
                     </li>
                     <!-- Contact Nav -->
                     <li class="nav-item">
-                        <a class="nav-link active x-padding navButton navLinkColour" href="#contact">
+                        <a class="nav-link active x-padding navButton navLinkColour" href="/index.html#contact">
                             <b>Contact</b>
                         </a>
                     </li>
@@ -101,7 +101,8 @@
                 <p>
                     One of the main challenges during development was adapting to Unity’s scripting environment, as I
                     had only previously used C# for console-based applications.
-                    Overcoming this required studying documentation and experimenting with Unity’s object properties to implement
+                    Overcoming this required studying documentation and experimenting with Unity’s object properties to
+                    implement
                     movement physics, collision handling, and collectible systems effectively.
                 </p>
                 <br>
@@ -146,6 +147,16 @@
             </div>
         </div>
     </div>
+    <script>
+        window.addEventListener("scroll", function () {
+            const nav = document.getElementById("mainNav");
+            if (window.scrollY > 300) {
+                nav.classList.add("scrolled");
+            } else {
+                nav.classList.remove("scrolled");
+            }
+        });
+    </script>
 </body>
 
 </html>
