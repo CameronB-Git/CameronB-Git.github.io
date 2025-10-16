@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
     <link href="/src/styling.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Portfolio - Home</title>
+    <title>Portfolio - Projects</title>
 </head>
 
 <body class="bgColour">
@@ -68,44 +69,78 @@
         </div>
     </nav>
 
+    <!-- Project Name -->
+    <div class="container project-y-padding">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="mt-3 text-center typewriter chosenFont text-white projectNameHeader"><b>Dungeon Dash 2D
+                        Platformer</b></h1>
+            </div>
+        </div>
+    </div>
+
     <!-- Container for Text -->
-    <div class="container mt-5 pt-5 text-white">
+    <div class="container mt-5 text-white chosenFont lessLetterSpacing">
         <div class="row">
             <div class="col-md-12" id="textSize">
-                <h1 class="py-5 text-center typewriter"><b>Dungeon Dash 2D Platformer</b></h1>
-
-                <!-- Web Development - Reckitt eCommerce Website -->
-                <p class="mt-2 mb-5">
-                    During my time at Ron Dearing UTC, one of my assignments within the <b>Game Development</b> Unit
-                    involved me creating a website using the <b>Unity Editor</b> & <b>C#</b> in order to create a
-                    functional game. 
-                    Said game was required to have at least one mechanic, such as moving platforms, along with
-                    player movement,
-                    as well as some sort of variable counter; collecting coins for example. Dungeon Dash can be played at Ron
-                    Dearing's
-                    <a href="https://rdutc.itch.io/dungeon-dash" target="_blank">Itch Page</a>.
+                <!-- Description of Project -->
+                <p>During my time at <strong>Ron Dearing UTC</strong>, one of my assignments within the <strong>Game
+                        Development Unit</strong> involved creating a 2D platformer game using the <strong>Unity
+                        Editor</strong> and <strong>C#</strong>.
+                    The goal was to design a fully functional game featuring at least one core mechanic, such as moving
+                    platforms or coin collection, alongside responsive player movement and a working variable counter
+                    system.
+                </p>
+                <br>
+                <p>
+                    The result was <strong>Dungeon Dash</strong> — a dungeon-themed platformer designed to challenge
+                    timing, reflexes, and precision. Players navigate through obstacles, collect coins, and sprint to
+                    the finish while avoiding hazards.
+                </p>
+                <br>
+                <p>
+                    One of the main challenges during development was adapting to Unity’s scripting environment, as I
+                    had only previously used C# for console-based applications.
+                    Overcoming this required studying documentation and experimenting with Unity’s object properties to implement
+                    movement physics, collision handling, and collectible systems effectively.
+                </p>
+                <br>
+                <p>
+                    Building <strong>Dungeon Dash</strong> was an incredibly valuable experience that helped me
+                    strengthen my understanding of C#, problem-solving, and the fundamentals of game development.
                 </p>
 
-                <p class="mt-2 mb-5">
-                    Throughout the development of Dungeon Dash, I was required to tackle a multitude of <b>technical
-                        constraints</b>; including the
-                    fact that I had never programmed with the Game Development <b>syntax</b> within C#, only the
-                    Console/Window application syntax.
-                    To overcome this, I needed to refer to the documentation online, which helped me understand
-                    the methods required
-                    to carry out this project from start to finish. Overall, building this game was a great experience,
-                    and allowed me to
-                    develop my skills in <b>C#, problem solving,</b> and <b>intuitive programming</b> in general.
-                </p>
+                <br><br>
 
-                <img src="/Assets/Images/platformGame/gamePreviewImage.png" class="smallScreen invoiceDashboardImage"
-                    style="margin-left: 15rem;">
-                <img src="/Assets/Images/platformGame/gamePreviewImageTwo.png" class="smallScreen invoiceDashboardImage"
-                    style="margin-left: 15rem;">
-                <img src="/Assets/Images/platformGame/gamePreviewImageThree.png"
-                    class="smallScreen invoiceDashboardImage" style="margin-left: 15rem;">
-                <img src="/Assets/Images/platformGame/gamePreviewImageFour.png"
-                    class="smallScreen invoiceDashboardImage" style="margin-left: 15rem;">
+                <!-- Buttons -->
+                <div class="mt-4 text-center">
+                    <a href="https://rdutc.itch.io/dungeon-dash" class="btn btn-primary" target="_blank">
+                        <i class="bi bi-box-arrow-up-right" style="margin-right: 0.1rem;"></i> Try the Game
+                    </a>
+                </div>
+
+                <br><br><br>
+
+                <!-- Project Images -->
+                <div class="row g-4">
+                    <div class="col-12">
+                        <img src="/Assets/Images/platformGame/gamePreviewImage.png" class="imgBorder"
+                            alt="Game Screenshot 1">
+                    </div>
+                    <div class="col-12">
+                        <img src="/Assets/Images/platformGame/gamePreviewImageTwo.png" class="imgBorder"
+                            alt="Game Screenshot 2">
+                    </div>
+                    <div class="col-12">
+                        <img src="/Assets/Images/platformGame/gamePreviewImageThree.png" class="imgBorder"
+                            alt="Game Screenshot 3">
+                    </div>
+                    <div class="col-12">
+                        <img src="/Assets/Images/platformGame/gamePreviewImageFour.png" class="imgBorder"
+                            alt="Game Screenshot 4">
+                    </div>
+                </div>
+
 
                 <br><br><br>
             </div>

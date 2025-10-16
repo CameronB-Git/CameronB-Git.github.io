@@ -252,6 +252,25 @@
   color: #ddd;
 }
 
+.btn {
+  border-radius: 50px;
+  padding: 0.6rem 1.4rem;
+}
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056d2;
+}
+
 .bgColour{
     background-color: #1E1E1E;
 }
@@ -275,6 +294,11 @@
     color: white !important;
 }
 
+.greyText{
+  color: #c3c3c3;
+  font-weight: 300;
+}
+
 .navButton{
     color: white;
     font-family: 'Space Grotesk', sans-serif;
@@ -295,6 +319,10 @@
     font-weight: 400;
     letter-spacing: 0.1rem;
     width: 100%;
+}
+
+.lessLetterSpacing{
+  letter-spacing: 0.05rem;
 }
 
 .socialLinks{
@@ -322,6 +350,10 @@
     text-decoration: none;
 }
 
+.projectNameHeader{
+  font-size: 3.2rem;
+}
+
 .line-spacing{
     line-height: 100%;
 }
@@ -334,9 +366,23 @@
     padding-top: 15rem;
 }
 
+.project-y-padding{
+  padding-top: 10rem;
+}
+
 .x-padding{
     padding-left: 2rem !important;
     padding-right: 2rem !important;
+}
+
+.imgBorder {
+  border: 1px solid #5f5f5f;
+  border-radius: 8px;
+  display: block;            /* Removes inline spacing */
+  width: 100%;               /* Ensures it fills its container */
+  height: auto;              /* Keeps proportions */
+  margin: 0;                 /* Removes any unwanted gaps */
+  padding: 0;                /* Ensures border hugs the image */
 }
 
 /* Sets the Auto Margin Feature */
