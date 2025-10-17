@@ -9,6 +9,7 @@
   <link href="/src/styling.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+  <script src="/src/scripts.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <title>Cameron Branston - Computer Science Student & Aspiring Software Developer</title>
 </head>
@@ -207,7 +208,7 @@
           <a href="/src/projects/cookie-clicker.html" class="noLinkUnderline">
             <div class="project-card">
               <div class="project-img">
-                <img src="/Assets/Images/Cookie_Clicker_Main.jpg" alt="Cookie Clicker" class="img-fluid">
+                <img src="/Assets/Images/cookieClicker/Cookie_Clicker_Main.jpg" alt="Cookie Clicker" class="img-fluid">
               </div>
               <div class="project-info">
                 <h4 class="chosenFont lessLetterSpacing">Cookie Clicker</h4>
@@ -279,7 +280,7 @@
       <div class="accordion" id="educationAccordion">
 
         <!-- Uni -->
-        <div class="accordion-item bg-dark text-white border-0 mb-3">
+        <div class="accordion-item bg-dark text-white chosenFont lessLetterSpacing border-0 mb-3">
           <h2 class="accordion-header" id="headingUni">
             <button class="accordion-button collapsed fw-bold edu-header" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseUni" aria-expanded="false" aria-controls="collapseUni">
@@ -306,7 +307,7 @@
         </div>
 
         <!-- BTEC -->
-        <div class="accordion-item bg-dark text-white border-0 mb-3">
+        <div class="accordion-item bg-dark text-white chosenFont lessLetterSpacing border-0 mb-3">
           <h2 class="accordion-header" id="headingBTEC">
             <button class="accordion-button collapsed fw-bold edu-header" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseBTEC" aria-expanded="false" aria-controls="collapseBTEC">
@@ -345,7 +346,8 @@
               style="font-size: 1.3rem;">cameronbranston@gmail.com<span class="tooltip">Click to Copy</span></p>
             <p onclick="goToWebsite('https://www.linkedin.com/in/cameron-branston/')"
               class="socialLinks mt-5 line-spacing" style="font-size: 1.3rem;">LinkedIn</p>
-            <p onclick="goToWebsite('https://github.com/CameronB-Git')" class="socialLinks mt-4 line-spacing" style="font-size: 1.3rem;">GitHub</p>
+            <p onclick="goToWebsite('https://github.com/CameronB-Git')" class="socialLinks mt-4 line-spacing"
+              style="font-size: 1.3rem;">GitHub</p>
             <p class="cvStuff mt-4 line-spacing" style="font-size: 1.3rem;">
               <a href="/Assets/CB-CV (Software Developer).pdf" target="_blank"
                 class="socialLinks noLinkUnderline">View</a> or
@@ -357,45 +359,15 @@
           <div class="col-md-6">
             <p class="chosenFont lessLetterSpacing mt-5 pt-3 text-white text-center" style="font-size: 1.25rem;">Student
               Developer • Problem Solver • Tech Enthusiast<br><br><br>Looking for Placement opportunities
-              <strong><i>2026-2027</i></strong></p>
+              <strong><i>2026-2027</i></strong>
+            </p>
           </div>
 
         </div>
       </div>
     </section>
-
     <!-- Footer/Contact Section Over -->
   </footer>
-
-
-  <script src="" async defer></script>
-  <script>
-    function copyEmail() {
-      const email = "cameronbranston@gmail.com";
-      navigator.clipboard.writeText(email).then(() => {
-        const tooltip = document.querySelector(".tooltip");
-        tooltip.textContent = "Copied!";
-        setTimeout(() => (tooltip.textContent = "Click to Copy"), 1500);
-      });
-    }
-  </script>
-
-  <script>
-    function goToWebsite(url) {
-      window.open(url, "_blank");
-    }
-  </script>
-
-  <script>
-    window.addEventListener("scroll", function () {
-      const nav = document.getElementById("mainNav");
-      if (window.scrollY > 300) {
-        nav.classList.add("scrolled");
-      } else {
-        nav.classList.remove("scrolled");
-      }
-    });
-  </script>
 </body>
 
 </html>

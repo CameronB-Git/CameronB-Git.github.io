@@ -411,6 +411,12 @@
   font-size: 3.2rem;
 }
 
+@media (max-width: 767px){
+  .projectNameHeader{
+    font-size: 2rem;
+  }
+}
+
 .line-spacing {
   line-height: 100%;
 }
