@@ -17,7 +17,7 @@
   <nav class="navbar navbar-expand-md fixed-top navbar-dark" id="mainNav">
     <div class="container-fluid">
       <div id="name">
-        <a class="navbar-brand text-white chosenFont nameTopLeft mx-auto w-25" href="#" id="nameClass">
+        <a class="navbar-brand text-white chosenFont nameTopLeft" href="#" id="nameClass">
           <b>Cameron Branston</b>
         </a>
       </div>
@@ -85,7 +85,7 @@
   <section id="expertise" class="expertise-section py-5 text-white">
     <br><br><br><br>
     <div class="container">
-      <h2 class="text-center mb-5">My Expertise</h2>
+      <h2 class="text-center chosenFont mb-5">My Expertise</h2>
       <div class="row g-3">
 
         <!-- Card 1 -->
@@ -127,7 +127,8 @@
             </div>
             <ul class="chosenFont mt-3" style="font-size: 1.05rem;">
               <li class="mb-2">Built responsive websites with <strong>HTML</strong>, <strong>CSS</strong>,
-                <strong>Bootstrap</strong>, and <strong>JavaScript</strong></li>
+                <strong>Bootstrap</strong>, and <strong>JavaScript</strong>
+              </li>
               <li class="mb-2">Created educational projects including eCommerce and dashboard applications</li>
               <li class="mb-2">Developing strong skills in UI layout and interactive features</li>
             </ul>
@@ -157,10 +158,12 @@
     </div>
   </section>
 
-
-  <br><br><br><br><br><br><br><br><br><br>
+  <div class="row g-4">
+    <div class="col-12 text-center">
+      <img src="/Assets/Images/homepageAssests/CoolCSharpSnippet_transparent_crisp.png" class="codeDecorSnippet"
+        alt="C# Snippet (Decoration)">
+    </div>
   </div>
-
 
   <!-- Projects Section -->
   <section class="text-white" id="projects">
@@ -264,24 +267,77 @@
     </div>
   </section>
 
-  <br><br><br><br><br><br>
+  <br><br>
   <!-- Projects Projects Over -->
 
-  <!-- Education Section -->
-  <section id="education">
-    <br><br><br><br>
-    <h2 class="text-center mb-5 text-white">My Education</h2>
+  <br><br><br>
 
+  <!-- Education Section -->
+  <section id="education" class="education-section py-5 text-white">
+    <h2 class="text-center mb-5 text-white chosenFont">My Education</h2>
+    <div class="container">
+      <div class="accordion" id="educationAccordion">
+
+        <!-- Uni -->
+        <div class="accordion-item bg-dark text-white border-0 mb-3">
+          <h2 class="accordion-header" id="headingUni">
+            <button class="accordion-button collapsed fw-bold edu-header" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseUni" aria-expanded="false" aria-controls="collapseUni">
+              <span class="edu-title"><span class="highlight-blue" style="margin-right: 0.4rem;">BSc Computer Science
+                  with AI</span>@ University of Hull</span>
+              <span class="edu-date">2024 - 2028</span>
+            </button>
+          </h2>
+          <div id="collapseUni" class="accordion-collapse collapse" aria-labelledby="headingUni"
+            data-bs-parent="#educationAccordion">
+            <div class="accordion-body">
+              <ul>
+                <li>Core modules in <strong>OOP (C#)</strong>, Databases & Networks, and Software Engineering</li>
+                <li>Developing skills in <strong>Artificial Intelligence</strong> and <strong>Machine
+                    Learning</strong></li>
+                <li>Professional Development: Collaborated in a <strong>group project</strong>; devised a
+                  student-focused time management app</li>
+                <li>Currently looking for a <strong>Placement</strong> to align with my Year in Industry (2026 - 2027)
+                  for professional
+                  experience</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- BTEC -->
+        <div class="accordion-item bg-dark text-white border-0 mb-3">
+          <h2 class="accordion-header" id="headingBTEC">
+            <button class="accordion-button collapsed fw-bold edu-header" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseBTEC" aria-expanded="false" aria-controls="collapseBTEC">
+              <span class="edu-title"><span class="highlight-pink" style="margin-right: 0.125rem;">BTEC Nationals in
+                  Computing (D*D*D)</span> @ Ron Dearing UTC</span>
+              <span class="edu-date">2022 – 2024</span>
+            </button>
+          </h2>
+          <div id="collapseBTEC" class="accordion-collapse collapse" aria-labelledby="headingBTEC"
+            data-bs-parent="#educationAccordion">
+            <div class="accordion-body">
+              <ul>
+                <li>Web Development: <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong></li>
+                <li>Game Development: <strong>Unity</strong> & <strong>C#</strong></li>
+                <li>Software Engineering: <strong>Agile</strong> practices & collaboration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <br><br><br><br><br><br>
-  <!-- Work Education Over -->
+  <!-- Education Education Over -->
 
-  <footer class="footerBGColour" style="height: 25rem;">
+  <br><br><br><br><br><br>
+
+  <!-- Footer/Contact Section -->
+  <footer class="footerBGColour footer">
     <!-- Contact Section -->
     <section id="contact">
-      <!-- <h2 class="text-center mb-5 text-white">Contact</h2> -->
-
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -289,7 +345,7 @@
               style="font-size: 1.3rem;">cameronbranston@gmail.com<span class="tooltip">Click to Copy</span></p>
             <p onclick="goToWebsite('https://www.linkedin.com/in/cameron-branston/')"
               class="socialLinks mt-5 line-spacing" style="font-size: 1.3rem;">LinkedIn</p>
-            <p onclick="goToWebsite('')" class="socialLinks mt-4 line-spacing" style="font-size: 1.3rem;">GitHub</p>
+            <p onclick="goToWebsite('https://github.com/CameronB-Git')" class="socialLinks mt-4 line-spacing" style="font-size: 1.3rem;">GitHub</p>
             <p class="cvStuff mt-4 line-spacing" style="font-size: 1.3rem;">
               <a href="/Assets/CB-CV (Software Developer).pdf" target="_blank"
                 class="socialLinks noLinkUnderline">View</a> or
@@ -299,16 +355,16 @@
           </div>
 
           <div class="col-md-6">
-            <p class="chosenFont mt-5 pt-2 text-white text-center">Currently Learning [Placeholder Text]</p>
+            <p class="chosenFont lessLetterSpacing mt-5 pt-3 text-white text-center" style="font-size: 1.25rem;">Student
+              Developer • Problem Solver • Tech Enthusiast<br><br><br>Looking for Placement opportunities
+              <strong><i>2026-2027</i></strong></p>
           </div>
 
         </div>
       </div>
-
-
     </section>
 
-    <!-- Contact Section Over -->
+    <!-- Footer/Contact Section Over -->
   </footer>
 
 
