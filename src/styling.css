@@ -10,6 +10,8 @@
   padding-bottom: 2rem;
 }
 
+
+
 /* Scrolled navbar (adds background + shadow + container look) */
 #mainNav.scrolled {
   background-color: rgba(35, 35, 35, 0.9);
@@ -26,19 +28,42 @@
   /* dark gray */
 }
 
-.codeDecorSnippet {
-  width: 50rem;
-  max-width: fit-content;
-  margin-left: 15rem;
-  margin-right: auto;
-  opacity: 25%;
+/* Force the snippet to be “background” */
+.between-sections .codeDecorSnippet{
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+
+  width: min(900px, 90vw) !important;
+  max-width: none !important;
+
+  margin: 0 !important;          /* kills your margin-left: 15rem */
+  opacity: 0.18 !important;
+  pointer-events: none;
+  z-index: 0;
 }
 
-@media (max-width: 767px){
-  .codeDecorSnippet{
-    width: 30rem;
-    margin-left: 1.25rem;
-  }
+/* Parent wrapper */
+.section-stack{
+  position: relative;
+}
+
+/* Ensure content sits ABOVE decoration */
+#expertise,
+#projects{
+  position: relative;
+  z-index: 1;
+}
+
+.between-sections{
+  position: relative;
+  height: 155px;
+  overflow: hidden;
+  margin-bottom: -80px;   /* pulls projects upward over the decor */
+}
+#projects{
+  padding-top: 80px;      /* restores spacing so text doesn’t collide */
 }
 
 #projects {
@@ -268,15 +293,6 @@
   }
 }
 
-
-@keyframes blink {
-  to {
-    visibility: hidden;
-  }
-}
-
-
-
 /* Show tooltip on hover */
 .email-copy:hover .tooltip {
   visibility: visible;
@@ -502,14 +518,6 @@ p {
     margin-left: 0%;
   }
 
-  #marginLeft {
-    margin-left: 0%;
-  }
-
-  .smallScreen {
-    margin-left: 0.25rem;
-  }
-
   /* Decor Changes */
   .typewriter b {
     display: inline-block;
@@ -645,7 +653,51 @@ html, body {
 
 .navbar-brand {
   max-width: 100%;
-  white-space: nowrap; /* keeps your name in one line */
+  white-space: nowrap; 
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
+/* Creates real space between sections */
+.section-gap{
+  position: relative;
+  height: 55px;        
+  background: #1E1E1E;    /* same as page so it blends */
+  overflow: visible;
+}
+
+/* Forces the decoration to show and not affect layout */
+.codeDecorSnippet--float{
+  position: absolute !important;
+  left: 55% !important;
+  top: 145% !important;
+  transform: translate(-50%, -50%) !important;
+
+  display: block !important;
+  margin: 0 !important;        
+  right: auto !important;
+
+  width: min(700px, 90vw) !important;
+  max-width: none !important;
+
+  pointer-events: none;
+  z-index: 5 !important;
+
+  opacity: 0.075 !important;    /* transparency */
+  filter: saturate(3)          /* more color */
+          brightness(1.25)     /* brighter */
+          contrast(1.05);      /* optional polish */
+}
+
+@media (max-width: 767px){
+  .codeDecorSnippet--float{
+    left: 54% !important;
+    top: 0.45rem !important;
+    opacity: 0.1!important;
+  }
+
+  .section-gap{
+    height: 0px;
+  }
+}
+
