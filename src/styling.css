@@ -689,3 +689,15 @@ html, body {
           contrast(1.05);      /* optional polish */
 }
 
+@media (max-width: 767px){
+  .codeDecorSnippet--float{
+    left: 54% !important;
+    top: 0.45rem !important;
+    opacity: 0.1!important;
+  }
+
+  .section-gap{
+    height: 0px;
+  }
+}
+
